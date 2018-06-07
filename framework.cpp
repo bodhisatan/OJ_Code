@@ -1278,6 +1278,33 @@ int main()
 ///搜索！！！！！
 ///DFS
 ///BFS
+
+int bfs(Node & fir, Node & dest)  
+{  
+    queue<Node> Q;  
+    Q.push(fir);  
+    vis[fir.x][fir.y] = true;  
+    while (!Q.empty())  
+    {  
+        Node cur =Q.front();  
+        if (cur == dest) return cur.step;  
+        Q.pop();  
+        for (int i = 0; i < 4; i++)  
+        {  
+            int new_x = cur.x + dir[i][0];  
+            int new_y = cur.y + dir[i][1];  
+            //检测下标是否越界，检测是否访问过，检测是否为障碍  
+            if (new_x >= 0 && new_x < ROW&&new_y >= 0 && new_y < COL&&!vis[new_x][new_y] && !map[new_x][new_y])  
+            {  
+                Node new_node = { new_x, new_y,cur.step+1};  
+                Q.push(new_node);//将合理的点放到队列末尾  
+                vis[new_x][new_y] = true;  
+            }  
+        }  
+    }  
+    return 0;  
+}
+
 ///A*启发式搜索算法(曼哈顿算法处理估价函数)
 //带有估价函数的广搜
 ///IDA*迭代深化A*搜索
