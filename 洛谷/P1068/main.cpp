@@ -1,4 +1,3 @@
-// Á·ÊÖË®Ìâ
 #include<bits/stdc++.h>
 using namespace std;
 

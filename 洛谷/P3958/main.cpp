@@ -1,5 +1,3 @@
-//sqrt会卡精度导致wa
-
 #include<bits/stdc++.h>
 using namespace std;
 
