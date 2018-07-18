@@ -3,7 +3,7 @@ TouchJava
 **本文件用来记录`Java`在一般OJ及算法比赛中所常用的基本操作**  
 
 ## 目录   
-* [a+b Problem](#"a+b Problem")
+* [a+b Problem](#a+b_Problem)
 * [输入](#输入)
 * [输出](#输出)
 * [字符串](#字符串)
@@ -14,7 +14,7 @@ TouchJava
 * [调用递归等动态方法](#调用递归等动态方法)
 * [数字类型的操作](#数字类型的操作)
 
-### a+b Problem  
+### a+b_Problem  
 ```Java  
 import java.io.*;  
 import java.util.*;  
