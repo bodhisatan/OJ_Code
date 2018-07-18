@@ -3,7 +3,7 @@ TouchJava
 **本文件用来记录`Java`在一般OJ及算法比赛中所常用的基本操作**  
 
 ## 目录   
-* [a+b Problem](#a+b_Problem)
+* [a+b_Problem](#a+b_Problem)
 * [输入](#输入)
 * [输出](#输出)
 * [字符串](#字符串)
